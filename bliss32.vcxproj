@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{74CB2C2D-64B7-40A1-A14B-0B79ECF3E7EB}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>bliss32</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)output</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <AdditionalIncludeDirectories>SDL/include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL/lib/sdlmain-vc8-Win32.lib;directx/directx-win32-ddraw-dinput8-dsound-dxerr8-dxguid.lib;winmm.lib;sdl/lib/sdl_image-vc8-Win32.lib;sdl/lib/sdl-vc8-Win32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="app\Bliss32.cpp" />
+    <ClCompile Include="app\config.cpp" />
+    <ClCompile Include="core\AudioMixer.cpp" />
+    <ClCompile Include="core\AudioOutputLine.cpp" />
+    <ClCompile Include="core\Bliss.cpp" />
+    <ClCompile Include="core\cartridge\Cartridge.cpp" />
+    <ClCompile Include="core\cartridge\CartridgeConfiguration.cpp" />
+    <ClCompile Include="core\cartridge\CRC32.cpp" />
+    <ClCompile Include="core\Component.cpp" />
+    <ClCompile Include="core\Container.cpp" />
+    <ClCompile Include="core\ControllerBus.cpp" />
+    <ClCompile Include="core\Emulator.cpp" />
+    <ClCompile Include="core\font.cpp" />
+    <ClCompile Include="core\image.cpp" />
+    <ClCompile Include="core\ProcessorBus.cpp" />
+    <ClCompile Include="core\std_file.cpp" />
+    <ClCompile Include="intellivision\AY38900.cpp" />
+    <ClCompile Include="intellivision\AY38900_Registers.cpp" />
+    <ClCompile Include="intellivision\AY38914.cpp" />
+    <ClCompile Include="intellivision\AY38914_Channel.cpp" />
+    <ClCompile Include="intellivision\AY38914_Registers.cpp" />
+    <ClCompile Include="intellivision\BackTabRAM.cpp" />
+    <ClCompile Include="intellivision\cartridge\IntellivisionCartridge.cpp" />
+    <ClCompile Include="intellivision\cartridge\IntellivisionCartridgeConfiguration.cpp" />
+    <ClCompile Include="intellivision\cartridge\IntellivisionRecognitionDatabase.cpp" />
+    <ClCompile Include="intellivision\CP1610.cpp" />
+    <ClCompile Include="intellivision\ecs\BankSwitchedROM.cpp" />
+    <ClCompile Include="intellivision\ecs\ECS.cpp" />
+    <ClCompile Include="intellivision\ecs\ECSKeyboard.cpp" />
+    <ClCompile Include="intellivision\GRAM.cpp" />
+    <ClCompile Include="intellivision\HandController.cpp" />
+    <ClCompile Include="intellivision\Intellivision.cpp" />
+    <ClCompile Include="intellivision\ivoice\Intellivoice.cpp" />
+    <ClCompile Include="intellivision\ivoice\LPC12.cpp" />
+    <ClCompile Include="intellivision\ivoice\MicroSequencer.cpp" />
+    <ClCompile Include="intellivision\ivoice\MicroSequencer_Registers.cpp" />
+    <ClCompile Include="intellivision\MOB.cpp" />
+    <ClCompile Include="plugin\SDLAudioOutputDevice.cpp" />
+    <ClCompile Include="plugin\SDLInputDevice.cpp" />
+    <ClCompile Include="plugin\SDLInputSignal.cpp" />
+    <ClCompile Include="plugin\SDLVideoOutputDevice.cpp" />
+    <ClCompile Include="plugin\Win32ClockDevice.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="app\Bliss32.h" />
+    <ClInclude Include="app\config.h" />
+    <ClInclude Include="app\resource.h" />
+    <ClInclude Include="core\AudioMixer.h" />
+    <ClInclude Include="core\AudioOutputLine.h" />
+    <ClInclude Include="core\Bliss.h" />
+    <ClInclude Include="core\cartridge\Cartridge.h" />
+    <ClInclude Include="core\cartridge\CartridgeConfiguration.h" />
+    <ClInclude Include="core\cartridge\CRC32.h" />
+    <ClInclude Include="core\cartridge\RecognitionDatabase.h" />
+    <ClInclude Include="core\colors.h" />
+    <ClInclude Include="core\Component.h" />
+    <ClInclude Include="core\Container.h" />
+    <ClInclude Include="core\Controller.h" />
+    <ClInclude Include="core\ControllerBus.h" />
+    <ClInclude Include="core\Emulator.h" />
+    <ClInclude Include="core\font.h" />
+    <ClInclude Include="core\image.h" />
+    <ClInclude Include="core\Memory.h" />
+    <ClInclude Include="core\MemoryAlias.h" />
+    <ClInclude Include="core\MemoryBus.h" />
+    <ClInclude Include="core\osd\AudioOutputDevice.h" />
+    <ClInclude Include="core\osd\ClockDevice.h" />
+    <ClInclude Include="core\osd\Device.h" />
+    <ClInclude Include="core\osd\InputDevice.h" />
+    <ClInclude Include="core\osd\types.h" />
+    <ClInclude Include="core\osd\VideoOutputDevice.h" />
+    <ClInclude Include="core\Palette.h" />
+    <ClInclude Include="core\Processor.h" />
+    <ClInclude Include="core\ProcessorBus.h" />
+    <ClInclude Include="core\RAM.h" />
+    <ClInclude Include="core\ROM.h" />
+    <ClInclude Include="core\SignalLine.h" />
+    <ClInclude Include="core\std_file.h" />
+    <ClInclude Include="core\VideoProducer.h" />
+    <ClInclude Include="intellivision\AY38900.h" />
+    <ClInclude Include="intellivision\AY38900_Registers.h" />
+    <ClInclude Include="intellivision\AY38914.h" />
+    <ClInclude Include="intellivision\AY38914_Channel.h" />
+    <ClInclude Include="intellivision\AY38914_Registers.h" />
+    <ClInclude Include="intellivision\BackTabRAM.h" />
+    <ClInclude Include="intellivision\cartridge\IntellivisionCartridge.h" />
+    <ClInclude Include="intellivision\cartridge\IntellivisionCartridgeConfiguration.h" />
+    <ClInclude Include="intellivision\cartridge\IntellivisionRecognitionDatabase.h" />
+    <ClInclude Include="intellivision\CP1610.h" />
+    <ClInclude Include="intellivision\ecs\BankSwitchedROM.h" />
+    <ClInclude Include="intellivision\ecs\ECS.h" />
+    <ClInclude Include="intellivision\ecs\ECSKeyboard.h" />
+    <ClInclude Include="intellivision\GRAM.h" />
+    <ClInclude Include="intellivision\HandController.h" />
+    <ClInclude Include="intellivision\Intellivision.h" />
+    <ClInclude Include="intellivision\ivoice\Intellivoice.h" />
+    <ClInclude Include="intellivision\ivoice\LPC12.h" />
+    <ClInclude Include="intellivision\ivoice\MicroSequencer.h" />
+    <ClInclude Include="intellivision\ivoice\MicroSequencer_Registers.h" />
+    <ClInclude Include="intellivision\MOB.h" />
+    <ClInclude Include="intellivision\MOBRect.h" />
+    <ClInclude Include="intellivision\PSGController.h" />
+    <ClInclude Include="plugin\SDLAudioOutputDevice.h" />
+    <ClInclude Include="plugin\SDLInputDevice.h" />
+    <ClInclude Include="plugin\SDLInputSignal.h" />
+    <ClInclude Include="plugin\SDLVideoOutputDevice.h" />
+    <ClInclude Include="plugin\Win32ClockDevice.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app\Bliss32.ico" />
+    <None Include="app\bliss33.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app\Bliss32Resources.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

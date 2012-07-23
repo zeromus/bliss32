@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="intellivision">
+      <UniqueIdentifier>{f8e1c6fc-7d51-43f6-a029-41ceb70dffd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="intellivision\ivoice">
+      <UniqueIdentifier>{fc402a28-05f0-4db4-8ac2-c17768aa7383}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="intellivision\ecs">
+      <UniqueIdentifier>{1faf3bb1-9a81-4322-bbb5-81e9005cd581}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="intellivision\cartridge">
+      <UniqueIdentifier>{28d146e2-6768-42b0-b8bc-483c468a0485}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{f6632c3a-3526-4392-af8b-120b06060974}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\cartridge">
+      <UniqueIdentifier>{30ccef12-2294-4904-a754-d4d9a37dfc5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\osd">
+      <UniqueIdentifier>{eb8d640b-950f-4915-be68-2d0ef2a5d43d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="app">
+      <UniqueIdentifier>{0a9f8b19-2e7c-4641-a41d-13df80407684}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plugin">
+      <UniqueIdentifier>{5de6eb50-ecc0-421b-9325-f45691dfd47b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="intellivision\AY38914_Channel.cpp">
+      <Filter>intellivision</Filter>
+    </ClCompile>
+    <ClCompile Include="intellivision\AY38914_Registers.cpp">
+      <Filter>intellivision</Filter>
+    </ClCompile>
+    <ClCompile Include="intellivision\BackTabRAM.cpp">
+      <Filter>intellivision</Filter>
+    </ClCompile>
+    <ClCompile Include="intellivision\CP1610.cpp">
+      <Filter>intellivision</Filter>
+    </ClCompile>
+    <ClCompile Include="intellivision\GRAM.cpp">
+      <Filter>intellivision</Filter>
+    </ClCompile>
+    <ClCompile Include="intellivision\HandController.cpp">
+      <Filter>intellivision</Filter>
+    </ClCompile>
+    <ClCompile Include="intellivision\Intellivision.cpp">
+      <Filter>intellivision</Filter>
+    </ClCompile>
+    <ClCompile Include="intellivision\MOB.cpp">
+      <Filter>intellivision</Filter>
+    </ClCompile>
+    <ClCompile Include="intellivision\AY38900.cpp">
+      <Filter>intellivision</Filter>
+    </ClCompile>
+    <ClCompile Include="intellivision\AY38900_Registers.cpp">
+      <Filter>intellivision</Filter>
+    </ClCompile>
+    <ClCompile Include="intellivision\AY38914.cpp">
+      <Filter>intellivision</Filter>
+    </ClCompile>
+    <ClCompile Include="intellivision\ivoice\LPC12.cpp">
+      <Filter>intellivision\ivoice</Filter>
+    </ClCompile>
+    <ClCompile Include="intellivision\ivoice\MicroSequencer.cpp">
+      <Filter>intellivision\ivoice</Filter>
+    </ClCompile>
+    <ClCompile Include="intellivision\ivoice\MicroSequencer_Registers.cpp">
+      <Filter>intellivision\ivoice</Filter>
+    </ClCompile>
+    <ClCompile Include="intellivision\ivoice\Intellivoice.cpp">
+      <Filter>intellivision\ivoice</Filter>
+    </ClCompile>
+    <ClCompile Include="intellivision\ecs\ECS.cpp">
+      <Filter>intellivision\ecs</Filter>
+    </ClCompile>
+    <ClCompile Include="intellivision\ecs\ECSKeyboard.cpp">
+      <Filter>intellivision\ecs</Filter>
+    </ClCompile>
+    <ClCompile Include="intellivision\ecs\BankSwitchedROM.cpp">
+      <Filter>intellivision\ecs</Filter>
+    </ClCompile>
+    <ClCompile Include="intellivision\cartridge\IntellivisionRecognitionDatabase.cpp">
+      <Filter>intellivision\cartridge</Filter>
+    </ClCompile>
+    <ClCompile Include="intellivision\cartridge\IntellivisionCartridge.cpp">
+      <Filter>intellivision\cartridge</Filter>
+    </ClCompile>
+    <ClCompile Include="intellivision\cartridge\IntellivisionCartridgeConfiguration.cpp">
+      <Filter>intellivision\cartridge</Filter>
+    </ClCompile>
+    <ClCompile Include="core\AudioOutputLine.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\Bliss.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\Component.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\Container.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\ControllerBus.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\Emulator.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\font.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\image.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\ProcessorBus.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\std_file.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\AudioMixer.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\cartridge\CartridgeConfiguration.cpp">
+      <Filter>core\cartridge</Filter>
+    </ClCompile>
+    <ClCompile Include="core\cartridge\CRC32.cpp">
+      <Filter>core\cartridge</Filter>
+    </ClCompile>
+    <ClCompile Include="core\cartridge\Cartridge.cpp">
+      <Filter>core\cartridge</Filter>
+    </ClCompile>
+    <ClCompile Include="app\Bliss32.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="app\config.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\SDLInputDevice.cpp">
+      <Filter>plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\SDLInputSignal.cpp">
+      <Filter>plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\SDLVideoOutputDevice.cpp">
+      <Filter>plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\Win32ClockDevice.cpp">
+      <Filter>plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin\SDLAudioOutputDevice.cpp">
+      <Filter>plugin</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="intellivision\AY38914_Channel.h">
+      <Filter>intellivision</Filter>
+    </ClInclude>
+    <ClInclude Include="intellivision\AY38914_Registers.h">
+      <Filter>intellivision</Filter>
+    </ClInclude>
+    <ClInclude Include="intellivision\BackTabRAM.h">
+      <Filter>intellivision</Filter>
+    </ClInclude>
+    <ClInclude Include="intellivision\CP1610.h">
+      <Filter>intellivision</Filter>
+    </ClInclude>
+    <ClInclude Include="intellivision\GRAM.h">
+      <Filter>intellivision</Filter>
+    </ClInclude>
+    <ClInclude Include="intellivision\HandController.h">
+      <Filter>intellivision</Filter>
+    </ClInclude>
+    <ClInclude Include="intellivision\Intellivision.h">
+      <Filter>intellivision</Filter>
+    </ClInclude>
+    <ClInclude Include="intellivision\MOB.h">
+      <Filter>intellivision</Filter>
+    </ClInclude>
+    <ClInclude Include="intellivision\MOBRect.h">
+      <Filter>intellivision</Filter>
+    </ClInclude>
+    <ClInclude Include="intellivision\PSGController.h">
+      <Filter>intellivision</Filter>
+    </ClInclude>
+    <ClInclude Include="intellivision\AY38900.h">
+      <Filter>intellivision</Filter>
+    </ClInclude>
+    <ClInclude Include="intellivision\AY38900_Registers.h">
+      <Filter>intellivision</Filter>
+    </ClInclude>
+    <ClInclude Include="intellivision\AY38914.h">
+      <Filter>intellivision</Filter>
+    </ClInclude>
+    <ClInclude Include="intellivision\ivoice\Intellivoice.h">
+      <Filter>intellivision\ivoice</Filter>
+    </ClInclude>
+    <ClInclude Include="intellivision\ivoice\LPC12.h">
+      <Filter>intellivision\ivoice</Filter>
+    </ClInclude>
+    <ClInclude Include="intellivision\ivoice\MicroSequencer.h">
+      <Filter>intellivision\ivoice</Filter>
+    </ClInclude>
+    <ClInclude Include="intellivision\ivoice\MicroSequencer_Registers.h">
+      <Filter>intellivision\ivoice</Filter>
+    </ClInclude>
+    <ClInclude Include="intellivision\ecs\BankSwitchedROM.h">
+      <Filter>intellivision\ecs</Filter>
+    </ClInclude>
+    <ClInclude Include="intellivision\ecs\ECS.h">
+      <Filter>intellivision\ecs</Filter>
+    </ClInclude>
+    <ClInclude Include="intellivision\ecs\ECSKeyboard.h">
+      <Filter>intellivision\ecs</Filter>
+    </ClInclude>
+    <ClInclude Include="intellivision\cartridge\IntellivisionRecognitionDatabase.h">
+      <Filter>intellivision\cartridge</Filter>
+    </ClInclude>
+    <ClInclude Include="intellivision\cartridge\IntellivisionCartridge.h">
+      <Filter>intellivision\cartridge</Filter>
+    </ClInclude>
+    <ClInclude Include="intellivision\cartridge\IntellivisionCartridgeConfiguration.h">
+      <Filter>intellivision\cartridge</Filter>
+    </ClInclude>
+    <ClInclude Include="core\AudioMixer.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\AudioOutputLine.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\Bliss.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\colors.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\Component.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\Container.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\Controller.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\ControllerBus.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\Emulator.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\font.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\image.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\Memory.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\MemoryAlias.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\MemoryBus.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\Palette.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\Processor.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\ProcessorBus.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\RAM.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\ROM.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\SignalLine.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\std_file.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\VideoProducer.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\cartridge\Cartridge.h">
+      <Filter>core\cartridge</Filter>
+    </ClInclude>
+    <ClInclude Include="core\cartridge\CartridgeConfiguration.h">
+      <Filter>core\cartridge</Filter>
+    </ClInclude>
+    <ClInclude Include="core\cartridge\CRC32.h">
+      <Filter>core\cartridge</Filter>
+    </ClInclude>
+    <ClInclude Include="core\cartridge\RecognitionDatabase.h">
+      <Filter>core\cartridge</Filter>
+    </ClInclude>
+    <ClInclude Include="core\osd\ClockDevice.h">
+      <Filter>core\osd</Filter>
+    </ClInclude>
+    <ClInclude Include="core\osd\Device.h">
+      <Filter>core\osd</Filter>
+    </ClInclude>
+    <ClInclude Include="core\osd\InputDevice.h">
+      <Filter>core\osd</Filter>
+    </ClInclude>
+    <ClInclude Include="core\osd\types.h">
+      <Filter>core\osd</Filter>
+    </ClInclude>
+    <ClInclude Include="core\osd\VideoOutputDevice.h">
+      <Filter>core\osd</Filter>
+    </ClInclude>
+    <ClInclude Include="core\osd\AudioOutputDevice.h">
+      <Filter>core\osd</Filter>
+    </ClInclude>
+    <ClInclude Include="app\Bliss32.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="app\config.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="app\resource.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="plugin\SDLAudioOutputDevice.h">
+      <Filter>plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="plugin\SDLInputDevice.h">
+      <Filter>plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="plugin\SDLInputSignal.h">
+      <Filter>plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="plugin\SDLVideoOutputDevice.h">
+      <Filter>plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="plugin\Win32ClockDevice.h">
+      <Filter>plugin</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app\Bliss32.ico">
+      <Filter>app</Filter>
+    </None>
+    <None Include="app\bliss33.ico">
+      <Filter>app</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app\Bliss32Resources.rc">
+      <Filter>app</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
